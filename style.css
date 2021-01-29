@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins", sans-serif;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+.nav {
+  display: inline-flex;
+}
+.nav li,
+a {
+  display: inline-flex;
+  text-decoration: none;
+  margin: 6px;
+  color: black;
+}
+.nav li:hover {
+  border-bottom: 1px solid black;
+}
+.nav button {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 35px;
+  padding: 5px;
+  font-weight: 400;
+  font-family: "Poppins" sans-serif;
+  color: black;
+}
+.nav button:hover {
+  color: white;
+  background-color: black;
+}
+.main {
+  width: 100%;
+  height: 500px;
+}
+.main-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(img/main-forest.jpg);
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+.main-img::after {
+  content: " ";
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  background: black;
+  opacity: 0.7;
+}
+.main-text {
+  z-index: 100;
+  color: white;
+  font-size: 34px;
+}
+.main-text span {
+  color: rgb(189, 159, 159);
+}
+.projects {
+  width: 100%;
+  height: 450px;
+  padding: 40px;
+}
+.projects h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 39px;
+  text-shadow: 1px 1px 2px rgb(15, 8, 9);
+}
+.p-image {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  margin: 0 auto;
+}
+.p-image img {
+  width: 30%;
+  background-position: center;
+  box-shadow: 10px 5px 5px 5px grey;
+}
+.about {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #010107;
+  color: white;
+  padding: 40px;
+}
+.about h2 {
+  text-align: center;
+  padding: 0;
+  text-shadow: 1px 1px 2px rgb(15, 8, 9);
+  font-size: 39px;
+}
+.about-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px;
+}
+.about-img img {
+  max-width: 300px;
+}
+.about-text h2 {
+  text-align: center;
+  font-size: 39px;
+}
+.about-text p {
+  text-align: center;
+  font-size: 24px;
+  width: 400px;
+}
+footer {
+  height: 90px;
+  width: 100%;
+  background-color: rgb(59, 59, 59);
+  display: flex;
+  justify-content: center;
+}
+.f-text {
+  color: white;
+  padding: 25px;
+}
+.f-text p {
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .logo h2 {
+    display: none;
+  }
+  .main-text {
+    font-size: 30px;
+  }
+  .projects {
+    height: 500px;
+  }
+  .p-image {
+    display: block;
+    justify-content: space-around;
+  }
+  .p-image img {
+    width: 40%;
+    margin: 10px auto;
+  }
+  .about-img img {
+    width: 30%;
+  }
+  .about-text {
+    font-size: 20px;
+  }
+  .about-text h2 {
+    font-size: 28px;
+  }
+  .about-text p {
+    font-size: 20px;
+  }
+}
